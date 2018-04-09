@@ -1,5 +1,5 @@
 {
-  "name": "boiler",
+  "name": "nodejs-boiler",
   "version": "1.0.0",
   "description": "Boiler plate project for Node JS",
   "main": "index.js",
@@ -17,8 +17,7 @@
   },
   "keywords": [
     "NodeJS",
-    "ES6",
-    "ES7"
+    "Hapi"
   ],
   "author": "Enzo Borg Frantz",
   "license": "ISC",
@@ -27,28 +26,27 @@
   },
   "homepage": "https://github.com/enzoborgfrantz/node-boiler#readme",
   "dependencies": {
-    "hapi": "^16.5.2",
-    "joi": "^10.6.0",
-    "node-fetch": "^1.7.1"
+    "hapi": "^17.3.1",
+    "joi": "^13.1.2",
+    "node-fetch": "^1.7.3"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-syntax-async-functions": "^6.13.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-regenerator": "^6.24.1",
-    "babel-polyfill": "^6.23.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.4.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "jest": "^20.0.4",
-    "jest-fetch-mock": "^1.2.1",
-    "webpack": "^3.4.1",
-    "webpack-node-externals": "^1.6.0"
+    "jest-fetch-mock": "^1.5.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-node-externals": "^1.7.2"
   }
 }

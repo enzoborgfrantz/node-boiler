@@ -1,15 +1,16 @@
-import hapi, { Server } from 'hapi';
-import routes from './routes/_routes';
+import hapi from 'hapi';
+import routes from './routes';
 
-const server = new Server();
-
-server.connection({
+const server = hapi.server({
   host: 'localhost',
   port: 8888
-});
+})
 
 server.route(routes);
 
-const startServer = () => server.start(() => console.log(`Server is running at ${server.info.uri}`));
+const startServer = async () => {
+  await server.start();
+  console.log(`Server is running at ${server.info.uri}`);
+}
 
 export { startServer };

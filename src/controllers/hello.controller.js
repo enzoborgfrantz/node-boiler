@@ -1,3 +1,1 @@
-export default function (request, reply) {
-  reply('ok');
-}
+export default (request, h) => 'ok';
